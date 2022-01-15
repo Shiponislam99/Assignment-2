@@ -1,5 +1,22 @@
- /*====================main================*/
+ /*======fonts====*/
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+ /*====================main================*/
+ .style-s{
+    Width: 582px;
+    Left: 260px;
+    font-size: 50px;
+ }
+ .font{
+     font-size: 24px;
+     
+     height: 200px;
+     margin-top: 120px;
+ }
 .flexible-container{
     display: flex;
     margin-bottom: 100px;
@@ -8,15 +25,25 @@
     width: 50%;
     padding-left: 10%;
 }
+
 .half-width img{
-    width: 70%;
+    width: 50%;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left: 650px;
+    top: 195px;
+}
+.half-width:hover img{
+    transform: scale(1.5) rotate(60deg);
+    transition: transform 2s case-in-out;
 
 }
 .no-decoration{
     text-decoration: none;
     text-align: center;
     color: whitesmoke;
-    background-color: rgb(236, 92, 236);
+    background-color: #E02C6D;
     padding: 10px 30px;
     border-radius: 20px;
 }
@@ -31,6 +58,10 @@
     margin: 3px;
     background-color: whitesmoke;
 }
+.grupe{
+    box-shadow: 10px 6px 10px 10px gainsboro;
+    text-align: center;
+}
 .sss{
     text-align: center;
 }
@@ -43,7 +74,12 @@
     font-size: 12px;
 }
 .pink-color{
-    color: rgb(180, 5, 180);
+    color: #E02C6D;
+    position: absolute;
+    margin-top: 50px;
+    width: 99px;
+    height: 24px;
+    left: 800px;
 }
 /*=================iast pat==============*/
 .color-ss{
@@ -53,12 +89,16 @@
 }
 .color-ss img{
     width: 70%;
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    left: 100px;
+    
 
 }
 .last-shipon{
     display: flex;
-    margin-bottom: 100px;
-
+    margin-top: 150px;
 }
 .last-pat{
     width: 50%;
@@ -68,7 +108,18 @@
 
 /*================footer=============*/
 footer{
+    margin-top: 130px;
     text-align: center;
     color: white;
     background-color: rgb(13, 13, 68);
 }
+/*===============
+                 media queries
+                              ==============*/
+  /*mobail devices*/
+  @media only screen and (max-width:688px) {
+    .half-width{
+    grid-template-columns: repeat(1,1fr);
+    }
+      
+  }                            
