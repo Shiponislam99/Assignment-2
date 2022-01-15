@@ -118,8 +118,28 @@ footer{
                               ==============*/
   /*mobail devices*/
   @media only screen and (max-width:688px) {
-    .half-width{
-    grid-template-columns: repeat(1,1fr);
+    .flexible-container{
+      width: 100%;
+    }
+    .half-width, .grupes, .pink-color, .last-shipon{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .button, .grupe, .last-shipon{
+        flex-direction: column;
     }
       
-  }                            
+  }  
+/*--------tablet divices-------*/                     
+      @media only screen and (min-width:688) and (max-width:992px) {
+     .flexible-container{
+     width: 100%;
+        }
+      .half-width, .grupes, .pink-color, .last-shipon{
+       grid-template-columns: repeat(2, 1fr);
+        }
+         .button, .grupe, .last-shipon{
+         flex-direction: column;
+          }
+                        
+                    
+   }
